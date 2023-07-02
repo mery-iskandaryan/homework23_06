@@ -7,7 +7,18 @@ def is_sorted(ls):
 				pass
 			else:
 				counter +=1
-	print('True' if counter == len(ls)-1 else 'False')
+	if counter == len(ls) - 1:
+		print('True')
+	else:
+		counter = 0
+		for j in range(len(ls)):
+			if j != len(ls)-1:
+				if ls[j] < ls[j+1]:
+					pass
+				else:
+					counter +=1
+		print('True' if counter == len(ls)-1 else 'False')
+ 
 
 ls = input('Enter a list: ')
 ls = ls.split(',')
