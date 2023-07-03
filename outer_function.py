@@ -1,7 +1,8 @@
 def outer_function(x):
 	def inner_function(factor):
 		return(x*factor)
-	print(inner_function(float(input('Enter a factor: '))))
+	return(inner_function(factor))
 
 x = float(input('Enter a number: '))
-outer_function(x)
+factor = float(input('Enter a number(factor): '))
+print(outer_function(x))
